@@ -24,6 +24,7 @@ public class AuthService implements UserDetailsService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+
     public ApiResponse registerUser(RegisterDto registerDto) {
         if (!registerDto.getPassword().equals(registerDto.getPrePassword()))
             return new ApiResponse("Parollar mos emas", false);

@@ -17,5 +17,5 @@ public class UserDto {
     private String password;
 
     @NotNull(message = "Lavozim bo'sh bo'lmasin")
-    private Integer lavozimId;
+    private Long lavozimId;
 }
